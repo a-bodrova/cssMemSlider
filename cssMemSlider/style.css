@@ -78,6 +78,14 @@ input[type="radio"] {
   cursor: pointer;
 }
 
+.bullet_item:hover > .bullet_item__inner {
+  border: 2px solid #fff;
+}
+
+.bullet_item:active > .bullet_item__inner {
+  transform: scale(0.85);
+}
+
 .bullet_item__inner {
   display: block;
   width: 0.9375rem;
@@ -183,5 +191,9 @@ input[type="radio"] {
 
   .text {
     text-align: left;
+  }
+
+  .bullets {
+    justify-content: center;
   }
 }
